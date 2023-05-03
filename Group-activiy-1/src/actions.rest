@@ -1,0 +1,33 @@
+# My Variables
+@contentType = application/json
+@baseurl = http://localhost:3001
+
+### GET Request
+GET {{baseurl}}/notes/
+Content-Type: {{contentType}
+
+### GET Request
+GET {{baseurl}}/notes/1
+Content-Type: {{contentType}
+
+### unknown end point
+GET {{baseurl}}/notesaa/15
+Content-Type: {{contentType}
+
+### POST Request
+POST {{baseurl}}/notes/
+Content-Type: application/json
+
+{
+    "content":"Testing REST client",
+    "important":true
+}
+
+###
+POST http://localhost:3001/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "content":"Another REST client",
+    "important": false
+}
